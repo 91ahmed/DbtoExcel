@@ -6,7 +6,7 @@ This is a PHP library to simplify the process of extracting database tables into
 composer require extract/databast-to-excel
 ```
 
-#### Example
+#### Simple Example
 ``` php
 use ExtractDatabaseToExcel\TableToExcel;
 

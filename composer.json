@@ -1,5 +1,5 @@
 {
-    "name": "extract/databast-to-excel",
+    "name": "extract/database-to-excel",
     "description": "This is a PHP library to simplify the process of extracting database tables into an Excel sheet.",
     "autoload": {
         "psr-4": {
