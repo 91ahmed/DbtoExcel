@@ -3,7 +3,7 @@ This is a PHP library to simplify the process of extracting database tables into
 
 #### Install
 ```
-composer require extract/databast-to-excel
+composer require extract/database-to-excel
 ```
 
 #### Simple Example
