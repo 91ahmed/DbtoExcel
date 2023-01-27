@@ -25,14 +25,14 @@ require('vendor/autoload.php');
 use ExtractDatabaseToExcel\TableToExcel;
 
 $extract = new TableToExcel([
-   'driver' => 'mysql',
-   'host' => '127.0.0.1',
-   'username' => 'root',
-   'password' => '',
-   'database' => 'test',
-   'port' => '3306',
-   'charset' => 'utf8',
-   'sslmode' => 'disable'
+      'driver' => 'mysql',
+      'host' => '127.0.0.1',
+      'username' => 'root',
+      'password' => '',
+      'database' => 'test',
+      'port' => '3306',
+      'charset' => 'utf8',
+      'sslmode' => 'disable'
 ]);
 
 $extract->table('users');
@@ -56,14 +56,14 @@ $extract->execute();
 use ExtractDatabaseToExcel\TableToExcel;
 
 $extract = new TableToExcel([
-   'driver' => 'mysql',
-   'host' => '127.0.0.1',
-   'username' => 'root',
-   'password' => '',
-   'database' => 'test',
-   'port' => '3306',
-   'charset' => 'utf8',
-   'sslmode' => 'disable'
+      'driver' => 'mysql',
+      'host' => '127.0.0.1',
+      'username' => 'root',
+      'password' => '',
+      'database' => 'test',
+      'port' => '3306',
+      'charset' => 'utf8',
+      'sslmode' => 'disable'
 ]);
 
 $extract->table('users');
@@ -72,4 +72,4 @@ $extract->execute();
 ```
 
 `execute()`
-> This is the last method you must invoke to execute the scripta and download the Excel file.
+> This is the last method you must invoke to execute the script and download the Excel file.
