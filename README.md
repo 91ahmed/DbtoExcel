@@ -2,8 +2,8 @@
 This is a PHP library to simplify the process of extracting database tables into an Excel file.
 
 #### Install
-``` php
-require ('vendor/autoload.php');
+```
+composer require extract/databast-to-excel
 ```
 
 #### Example
