@@ -2,19 +2,18 @@
 PHP script to simplify the process of converting database table to excel sheet.
 
 #### Requirements
-
 * PHP 7.0 or higher
 * Composer for installation
 
-#### Quick Start
-
-Installation via composer
+#### Install
+via composer
 ```
 composer require extract/database-to-excel
 ```
 
-#### Simple Example
+#### Example
 ``` php
+// don't forget to import vendor/autoload.php
 require('vendor/autoload.php');
 
 use ExtractDatabaseToExcel\TableToExcel;
@@ -67,4 +66,4 @@ $extract->execute();
 ```
 
 `execute()`
-> This is the last method you must invoke to execute the script and download the Excel file.
+> This is the last method you shoulf invoke to execute the script, the method will convert the data and download the excel file.
