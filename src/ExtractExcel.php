@@ -1,10 +1,10 @@
 <?php
 	
-	namespace ExtractDatabaseToExcel;
+	namespace Database\Excel;
 
-	use ExtractDatabaseToExcel\DbConnect;
+	use Database\Excel\Connect;
 
-	class TableToExcel extends DbConnect
+	class ExtractExcel extends Connect
 	{
 		private $pdo;
 		private $data;
@@ -32,7 +32,7 @@
 			$this->charset = (isset($config['charset'])) ? $config['charset'] : $this->charset;
 			$this->sslmode = (isset($config['sslmode'])) ? $config['sslmode'] : $this->sslmode;
 
-			$pdo = new DbConnect();
+			$pdo = new Connect();
 			$pdo->setConfig('driver', $this->driver);
 			$pdo->setConfig('host', $this->host);
 			$pdo->setConfig('username', $this->username);

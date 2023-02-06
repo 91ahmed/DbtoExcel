@@ -16,9 +16,8 @@ composer require extract/database-to-excel
 // don't forget to import vendor/autoload.php
 require('vendor/autoload.php');
 
-use ExtractDatabaseToExcel\TableToExcel;
-
-$extract = new TableToExcel([
+// Database information
+$extract = new Database\Excel\ExtractExcel([
       'driver' => 'mysql',
       'host' => '127.0.0.1',
       'username' => 'root',
@@ -29,9 +28,9 @@ $extract = new TableToExcel([
       'sslmode' => 'disable'
 ]);
 
-$extract->table('users');
-$extract->columns('*');
-$extract->execute();
+$extract->table('users'); // Specify the database table.
+$extract->columns('*'); // Specify the columns you need to extract.
+$extract->execute(); // Execute the script.
 ```
 
 #### Description
@@ -56,8 +55,7 @@ $extract = new TableToExcel([
       'password' => '',
       'database' => 'test',
       'port' => '3306',
-      'charset' => 'utf8',
-      'sslmode' => 'disable'
+      'charset' => 'utf8'
 ]);
 
 $extract->table('users');
@@ -66,4 +64,4 @@ $extract->execute();
 ```
 
 `execute()`
-This is the last method you shoulf invoke to execute the script, the method will convert the data and download the excel file.
+This is the last method you should invoke to execute the script, the method will convert the data and download the excel file.

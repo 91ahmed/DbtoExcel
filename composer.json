@@ -1,14 +1,15 @@
 {
-    "name": "extract/database-to-excel",
-    "description": "This is a PHP library to simplify the process of extracting database tables into an Excel sheet.",
+    "name": "exceldb/dbtoexcel",
+    "description": "PHP script to simplify the process of converting database table to excel sheet.",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "ExtractDatabaseToExcel\\": "src/"
+            "Database\\Excel\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "ahmedhassan",
+            "name": "ahmed hassan",
             "email": "ahmedh12491@gmail.com"
         }
     ],

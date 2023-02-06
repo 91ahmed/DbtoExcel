@@ -1,11 +1,11 @@
 <?php
 	
-	namespace ExtractDatabaseToExcel;
+	namespace Database\Excel;
 	
 	/**
 	 *	PDO Database Connection
 	 */
-	class DbConnect
+	class Connect
 	{
 		/** 
 		 *	@var hold PDO instance 
