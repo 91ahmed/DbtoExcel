@@ -1,4 +1,4 @@
-## Extract Database Table to Excel Sheet
+## DbtoExcel
 PHP script to simplify the process of converting database table to excel sheet.
 
 #### Requirements
@@ -11,11 +11,6 @@ PHP script to simplify the process of converting database table to excel sheet.
 Installation via composer
 ```
 composer require extract/database-to-excel
-```
-
-Don't forget to require vendor/autoload in your PHP file.
-``` php
-require('vendor/autoload.php');
 ```
 
 #### Simple Example
@@ -42,15 +37,15 @@ $extract->execute();
 
 #### Description
 
-> The **TableToExcel** class constructor takes one parameter, which is an array of the database connection information.
+> The **TableToExcel** class constructor takes one parameter, which is an *array* of the database information.
 
 `table()`
-> This method used to specify the database table you need to extract, it takes one parameter which is the name of the table.
+> This method used to specify the database table you need to extract, it takes one parameter *(string)* which is the name of the table.
 
 `columns()`
-> Used to specify the columns you need to extract from the database table, it takes one parameter which is the column's names.
+> Used to specify the columns you need to extract from the database table, it takes one parameter *(string)* which is the column's names.
 
-> To extract all columns just add __asterisk (*)__ or leave the parameter empty and to extract specific columns see the example below.
+> To extract all columns just add __asterisk (*)__ or leave the parameter empty while if you want to extract specific columns you can write the columns names following by comma separator.. see the example below.
 
 ``` php
 use ExtractDatabaseToExcel\TableToExcel;
