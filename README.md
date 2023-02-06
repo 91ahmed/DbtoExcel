@@ -1,5 +1,5 @@
 ## Extract Database Table to Excel Sheet
-This is a PHP library to simplify the process of extracting database tables into an Excel file.
+PHP script to simplify the process of converting database table to excel sheet.
 
 #### Requirements
 
