@@ -14,7 +14,7 @@ composer require exceldb/dbtoexcel
 ### # Example
 ``` php
 // don't forget to import vendor/autoload.php
-require('vendor/autoload.php');
+require('vendor/autoload.php'); 
 
 // Database information
 $extract = new Database\Excel\ExtractExcel([
